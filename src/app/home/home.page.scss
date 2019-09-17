@@ -1,0 +1,75 @@
+@import "../../assets/scss/mixin.scss";
+
+ion-content {
+  --background: #fefefe;
+  //@include bg-image('assets/images/banner.png');
+}
+
+ion-card {
+  --background: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .05) !important;
+  margin-top: 5px !important;
+}
+
+ion-button {
+  --background: linear-gradient(to right, #ee8a4d, #dc5b6c);
+}
+
+.slide-box {
+  padding: 15px 0 5px 0;
+}
+
+.doctor-box {
+  padding: 0 8px;
+}
+
+.title {
+  font-size: 14px;
+  color: #5b5060;
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-size: 12px;
+  color: #b1acb3;
+  margin-top: 0;
+}
+
+.icon {
+  flex: 0 0 40px;
+  height: 40px;
+  margin: 15px 10px 0 15px;
+  @include bg-image('../../assets/images/home_doctor');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-1 {
+  @include bg-image('../../assets/images/home_msg');
+}
+
+.fl-box {
+  display: flex;
+  background: #fff8ef;
+  border-radius: 3px;
+}
+
+.h-title {
+  text-align: center;
+  font-size: 20px;
+  color: #5b5060;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.h-desc {
+  text-align: center;
+  font-size: 14px;
+  color: #b0acb3;
+  margin: 30px 0;
+}
+
+.h-btn {
+  width: 70%;
+  margin: 0 auto 30px auto;
+}
