@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar class="toolbar">
+        <ion-buttons slot="start">
+            <ion-back-button mode="md"></ion-back-button>
+        </ion-buttons>
+        <ion-title>消息</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+    <div class="no-msg" *ngIf="!hasMessage"></div>
+    <div *ngIf="hasMessage">
+        <ion-list lines="none" class="list">
+            <ion-item slot="end" class="list-item">
+                <ion-label class="msg-content ion-text-wrap">
+                    您好！襄阳市政府最新调研报告，通知下发各位，请查收。襄阳市政府最新调研报告，通知下发各位，请查收。襄阳市政府最新调研报告，通知下发各位，请查收通知下发各位通知下发各位。
+                    <p class="date">2019-09-07 12:50</p>
+                </ion-label>
+            </ion-item>
+            <ion-item slot="end" class="list-item">
+                <ion-label class="msg-content ion-text-wrap">
+                    您好！襄阳市政府最新调研报告，通知下发各位，请查收。襄阳市政府最新调研报告，通知下发各位，请查收。襄阳市政府最新调研报告，通知下发各位，请查收通知下发各位通知下发各位。
+                    <p class="date">2019-09-07 12:50</p>
+                </ion-label>
+            </ion-item>
+            <ion-item slot="end" class="list-item">
+                <ion-label class="msg-content ion-text-wrap">
+                    您好！襄阳市政府最新调研报告，通知下发各位，请查收。襄阳市政府最新调研报告，通知下发各位，请查收。襄阳市政府最新调研报告，通知下发各位，请查收通知下发各位通知下发各位。
+                    <p class="date">2019-09-07 12:50</p>
+                </ion-label>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

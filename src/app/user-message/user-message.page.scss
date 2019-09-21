@@ -1,0 +1,81 @@
+@import "../../assets/scss/mixin.scss";
+
+.toolbar {
+  @include toolbar;
+}
+
+.content {
+  @include content-bg;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-right: 10px;
+}
+
+.icon-city {
+  @extend .icon;
+  @include bg-image('../../assets/images/user/city');
+}
+
+.icon-height {
+  @extend .icon;
+  @include bg-image('../../assets/images/user/height');
+}
+
+.icon-history {
+  @extend .icon;
+  @include bg-image('../../assets/images/user/history');
+}
+
+.icon-id-card {
+  @extend .icon;
+  @include bg-image('../../assets/images/user/id_card');
+}
+
+.icon-name {
+  @extend .icon;
+  @include bg-image('../../assets/images/user/name');
+}
+
+.icon-old {
+  @extend .icon;
+  @include bg-image('../../assets/images/user/old');
+}
+
+.icon-sex {
+  @extend .icon;
+  @include bg-image('../../assets/images/user/sex');
+}
+
+.icon-weight {
+  @extend .icon;
+  @include bg-image('../../assets/images/user/weight');
+}
+
+.list {
+  padding: 0 15px;
+
+  ion-item {
+    border-bottom: 1px #f4f4f4 solid;
+    padding: 5px 0;
+    @include font-color;
+    --padding-start: 0;
+  }
+}
+.data-time{
+  flex: 1;
+  --padding-start: 0;
+}
+.fl-38{
+  flex:0 0 38px;
+}
+.submit{
+  --color: #DE6274!important;
+  --color-activated: #DE6274!important;
+}

@@ -1,0 +1,57 @@
+@import "../../assets/scss/mixin.scss";
+.toolbar{
+  @include toolbar;
+}
+.icon-close{ font-size: 35px; @include font-color;}
+.login-box{
+  padding: 80px 30px 0 30px;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-right: 10px;
+}
+
+.icon-user-phone {
+  @extend .icon;
+  @include bg-image('../../assets/images/login/user-phone');
+}
+
+.icon-vail-code {
+  @extend .icon;
+  @include bg-image('../../assets/images/login/vail-code');
+}
+
+ion-item{
+  padding: 10px 0; margin-bottom: 10px;
+  border-bottom: 1px #f2f2f2 solid;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.login-btn{
+  @include btn(100%, 40px);
+  margin: 40px 0 20px 0;
+}
+.tips{
+  color:#898989; font-size: 13px;
+}
+.vail-code{
+  --background: #fff;
+  --background-activated: #fff;
+  --border-color:rgba(91,80,96,1);
+  --border-radius: 2px;
+  --border-style: solid;
+  --border-width: 1px;
+  --color:#5D4F61;
+  --color-activated: #5D4F61;
+  width: 100px;
+  height: 32px;
+  font-size: 15px;
+
+}

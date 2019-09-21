@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {InAppBrowser} from '@ionic-native/in-app-browser/ngx';
 
 @Component({
     selector: 'app-home',
@@ -16,10 +18,24 @@ export class HomePage implements OnInit {
         speed: 400
     };
 
-    constructor() {
+    constructor(private router: Router,
+                private iab: InAppBrowser) {
     }
 
     ngOnInit() {
+    }
+
+    goAnswer() {
+        this.router.navigateByUrl('/answer');
+    }
+
+    goUserMessage() {
+        this.router.navigateByUrl('/user-message');
+    }
+
+    openUrl() {
+        const browser = this.iab.create('https://baidu.com/', '_blank', 'location=yes');
+        browser.show();
     }
 
 }

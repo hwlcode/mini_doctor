@@ -22,9 +22,26 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-ion-toolbar {
-  --border-color: #fff;
-  --color: #5b5060;
-  box-shadow: 0 1px 10px rgba(0,0,0,.05);
+/* model 样式必须在全局样式中定义才生效*/
+.bichao-page {
+  --height: 400px;
+  --max-height: 400px;
+  --border-radius: 15px 15px 0 0;
+  bottom: -412px;
+}
+.model-header{
+  margin: 0 20px;
+  width: auto;
+}
+.model-title{
+  --border-color: #F2F2F2;
+  color: #5B5060;
+  text-align: center;
+  margin: 0 20px;
+}
+.model-content{
+  font-size: 14px; line-height: 22px; color:#78727D;
+  padding: 20px;
+  margin: 0;
 }
 

@@ -1,0 +1,31 @@
+@import "../../assets/scss/mixin.scss";
+
+.toolbar{
+  @include toolbar;
+}
+.content{
+  @include content-bg;
+}
+.no-msg{
+  @include bg-image('../../assets/images/message/message');
+  background-size: 50%;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.msg-content{
+  @include font-color; font-size: 13px; line-height: 21px;
+}
+.list{
+  background: none;
+}
+.list-item{
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  margin-bottom: 8px;
+}
+.date{
+  text-align: right;
+  margin-top: 5px;
+}

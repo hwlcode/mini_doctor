@@ -1,9 +1,188 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>健康</ion-title>
-  </ion-toolbar>
+    <ion-toolbar class="toolbar">
+        <ion-segment (ionChange)="segmentChanged($event)" mode="md" class="tabs">
+            <ion-segment-button value="0" class="tab-items" checked>
+                <ion-label class="txt">热门</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="1" class="tab-items">
+                <ion-label class="txt">两性健康</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="2" class="tab-items">
+                <ion-label class="txt">孕产育儿</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <ion-list lines="none" class="list">
+        <div class="list-item" (click)="goDetail(1);">
+            <ion-row>
+                <ion-col size="8">
+                    <ion-text class="title">秃顶为什么没有被自然选择淘汰？</ion-text>
+                    <ion-text class="desc">秃顶为什一个性是否被个性是否被自然选择淘选择淘汰？</ion-text>
+                </ion-col>
+                <ion-col size="4">
+                    <img src="../../assets/images/demo.jpg" alt="" width="120" height="75">
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="auto">
+                    <ion-avatar class="avatar">
+                        <img src="assets/images/user.png" alt="">
+                    </ion-avatar>
+                </ion-col>
+                <ion-col>
+                    <ion-text class="tags">赛华佗 北京协和医院 妇产科主任医师</ion-text>
+                </ion-col>
+                <ion-col size="auto">
+                    <ion-button class="tags-btn">科普</ion-button>
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="list-item" (click)="goDetail(1);">
+            <ion-row>
+                <ion-col size="12">
+                    <ion-text class="title">秃顶为什么没有被自然选择淘汰？</ion-text>
+                    <ion-text class="desc">秃顶为什一个性是否被个性是否被自然选择淘选择淘汰？</ion-text>
+                </ion-col>
+<!--                <ion-col size="4">-->
+<!--                    <img src="../../assets/images/demo.jpg" alt="" width="120" height="75">-->
+<!--                </ion-col>-->
+            </ion-row>
+            <ion-row>
+                <ion-col size="auto">
+                    <ion-avatar class="avatar">
+                        <img src="assets/images/user.png" alt="">
+                    </ion-avatar>
+                </ion-col>
+                <ion-col>
+                    <ion-text class="tags">赛华佗 北京协和医院 妇产科主任医师</ion-text>
+                </ion-col>
+                <ion-col size="auto">
+                    <ion-button class="tags-btn-2">优质回答</ion-button>
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="list-item" (click)="goDetail(1);">
+            <ion-row>
+                <ion-col size="8">
+                    <ion-text class="title">秃顶为什么没有被自然选择淘汰？</ion-text>
+                    <ion-text class="desc">秃顶为什一个性是否被个性是否被自然选择淘选择淘汰？</ion-text>
+                </ion-col>
+                <ion-col size="4">
+                    <img src="../../assets/images/demo.jpg" alt="" width="120" height="75">
+                </ion-col>
+            </ion-row>
+<!--            <ion-row>-->
+<!--                <ion-col size="auto">-->
+<!--                    <ion-avatar class="avatar">-->
+<!--                        <img src="assets/images/user@2x.png" alt="">-->
+<!--                    </ion-avatar>-->
+<!--                </ion-col>-->
+<!--                <ion-col>-->
+<!--                    <ion-text class="tags">赛华佗 北京协和医院 妇产科主任医师</ion-text>-->
+<!--                </ion-col>-->
+<!--                <ion-col size="auto">-->
+<!--                    <ion-button class="tags-btn">科普</ion-button>-->
+<!--                </ion-col>-->
+<!--            </ion-row>-->
+        </div>
+        <div class="list-item">
+            <ion-row>
+                <ion-col size="8">
+                    <ion-text class="title">秃顶为什么没有被自然选择淘汰？</ion-text>
+                    <ion-text class="desc">秃顶为什一个性是否被个性是否被自然选择淘选择淘汰？</ion-text>
+                </ion-col>
+                <ion-col size="4">
+                    <img src="../../assets/images/demo.jpg" alt="" width="120" height="75">
+                </ion-col>
+            </ion-row>
+            <ion-row>
+<!--                <ion-col size="auto">-->
+<!--                    <ion-avatar class="avatar">-->
+<!--                        <img src="assets/images/user@2x.png" alt="">-->
+<!--                    </ion-avatar>-->
+<!--                </ion-col>-->
+                <ion-col>
+                    <ion-text class="tags"><span style="display: inline-block; padding-left: 10px;">广告</span></ion-text>
+                </ion-col>
+<!--                <ion-col size="auto">-->
+<!--                    <ion-button class="tags-btn">科普</ion-button>-->
+<!--                </ion-col>-->
+            </ion-row>
+        </div>
+        <div class="list-item">
+            <ion-row>
+                <ion-col size="8">
+                    <ion-text class="title">秃顶为什么没有被自然选择淘汰？</ion-text>
+                    <ion-text class="desc">秃顶为什一个性是否被个性是否被自然选择淘选择淘汰？</ion-text>
+                </ion-col>
+                <ion-col size="4">
+                    <img src="../../assets/images/demo.jpg" alt="" width="120" height="75">
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <!--                <ion-col size="auto">-->
+                <!--                    <ion-avatar class="avatar">-->
+                <!--                        <img src="assets/images/user@2x.png" alt="">-->
+                <!--                    </ion-avatar>-->
+                <!--                </ion-col>-->
+                <ion-col>
+                    <ion-text class="tags">广告</ion-text>
+                </ion-col>
+                <!--                <ion-col size="auto">-->
+                <!--                    <ion-button class="tags-btn">科普</ion-button>-->
+                <!--                </ion-col>-->
+            </ion-row>
+        </div>
+        <div class="list-item">
+            <ion-row>
+                <ion-col size="8">
+                    <ion-text class="title">秃顶为什么没有被自然选择淘汰？</ion-text>
+                    <ion-text class="desc">秃顶为什一个性是否被个性是否被自然选择淘选择淘汰？</ion-text>
+                </ion-col>
+                <ion-col size="4">
+                    <img src="../../assets/images/demo.jpg" alt="" width="120" height="75">
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <!--                <ion-col size="auto">-->
+                <!--                    <ion-avatar class="avatar">-->
+                <!--                        <img src="assets/images/user@2x.png" alt="">-->
+                <!--                    </ion-avatar>-->
+                <!--                </ion-col>-->
+                <ion-col>
+                    <ion-text class="tags">广告</ion-text>
+                </ion-col>
+                <!--                <ion-col size="auto">-->
+                <!--                    <ion-button class="tags-btn">科普</ion-button>-->
+                <!--                </ion-col>-->
+            </ion-row>
+        </div>
+        <div class="list-item">
+            <ion-row>
+                <ion-col size="8">
+                    <ion-text class="title">秃顶为什么没有被自然选择淘汰？</ion-text>
+                    <ion-text class="desc">秃顶为什一个性是否被个性是否被自然选择淘选择淘汰？</ion-text>
+                </ion-col>
+                <ion-col size="4">
+                    <img src="../../assets/images/demo.jpg" alt="" width="120" height="75">
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <!--                <ion-col size="auto">-->
+                <!--                    <ion-avatar class="avatar">-->
+                <!--                        <img src="assets/images/user@2x.png" alt="">-->
+                <!--                    </ion-avatar>-->
+                <!--                </ion-col>-->
+                <ion-col>
+                    <ion-text class="tags">广告</ion-text>
+                </ion-col>
+                <!--                <ion-col size="auto">-->
+                <!--                    <ion-button class="tags-btn">科普</ion-button>-->
+                <!--                </ion-col>-->
+            </ion-row>
+        </div>
+    </ion-list>
 </ion-content>

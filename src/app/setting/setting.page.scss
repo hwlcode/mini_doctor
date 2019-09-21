@@ -1,0 +1,24 @@
+@import "../../assets/scss/mixin.scss";
+
+ion-list{
+  margin-bottom: 8px;
+}
+.toolbar{
+  @include toolbar;
+}
+.content{
+  @include content-bg;
+}
+.icon-more{
+  @include icon-more;
+  margin-left:8px;
+}
+.list-item{
+  @include list-item;
+}
+.logout{
+  --background: #fff;
+  --background-activated: #fff;
+  --color:#DB5A6C;
+  --color-activated:#DB5A6C;
+}

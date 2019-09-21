@@ -1,20 +1,21 @@
 <ion-tabs>
+    <ion-tab-bar slot="bottom" (ionTabBarChanged)="change($event)">
+        <ion-tab-button tab="home">
+            <img src="../../assets/images/tabs/icon_home_on.png" *ngIf="flag=='home'" />
+            <img src="../../assets/images/tabs/icon_home_off.png" *ngIf="flag!='home'" />
+            <ion-label>首页</ion-label>
+        </ion-tab-button>
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="home">
-      <ion-icon name="flash"></ion-icon>
-      <ion-label>首页</ion-label>
-    </ion-tab-button>
+        <ion-tab-button tab="health">
+            <img src="../../assets/images/tabs/icon_health_on.png" *ngIf="flag=='health'" />
+            <img src="../../assets/images/tabs/icon_health_off.png" *ngIf="flag!='health'" />
+            <ion-label>健康</ion-label>
+        </ion-tab-button>
 
-    <ion-tab-button tab="health">
-      <ion-icon name="apps"></ion-icon>
-      <ion-label>健康</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="profile">
-      <ion-icon name="send"></ion-icon>
-      <ion-label>我的</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-
+        <ion-tab-button tab="profile">
+            <img src="../../assets/images/tabs/icon_profile_on.png" *ngIf="flag=='profile'" />
+            <img src="../../assets/images/tabs/icon_profile_off.png" *ngIf="flag!='profile'" />
+            <ion-label>我的</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
 </ion-tabs>

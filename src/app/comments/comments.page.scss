@@ -1,0 +1,67 @@
+@import "../../assets/scss/mixin.scss";
+
+.toolbar{
+  @include toolbar;
+}
+.content{
+  @include content-bg
+}
+.no-data{
+  @include bg-image('../../assets/images/comments/comments');
+  background-size: 50%;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-right: 10px;
+}
+
+.icon-like-it {
+  @extend .icon;
+  @include bg-image('../../assets/images/detail/like-it');
+}
+.icon-like-on {
+  @extend .icon;
+  @include bg-image('../../assets/images/comments/like_on');
+}
+
+.comment-box{
+  padding: 0 15px;
+  background: #fff;
+  .comment-list{
+    padding: 5px 0;
+    border-bottom: 1px #F2F2F2 solid;
+  }
+  h2{
+    font-size:15px;
+    @include font-color;
+    line-height:35px;
+    margin: 0 0 5px 0;
+    border-bottom: 1px #F2F2F2 solid;
+  }
+  p{margin: 0; font-size: 12px;}
+  .avatar{margin-left: 0;}
+  .fl-box{display: flex; justify-content: space-between;}
+  .name{font-size: 12px; line-height: 15px;}
+  .tags{@include p-color; line-height: 18px;}
+  .date{@include p-color; line-height: 18px;}
+  .c-content{font-size: 13px; line-height: 21px; @include font-color; padding: 10px 0;}
+  .all-comment-btn{
+    --background: none;
+    --background-activated: none;
+    color:#DB596B; font-size: 13px;
+  }
+  .c-input{
+    --background:rgba(247,247,247,1);
+    border-radius:2px;
+  }
+}

@@ -1,0 +1,99 @@
+<ion-header [class.video-header]="isVedioPage">
+    <ion-toolbar [class.toolbar]="!isVedioPage" [class.video-page]="isVedioPage">
+        <ion-buttons slot="start">
+            <ion-back-button mode="md" [class.view-back]="isVedioPage"></ion-back-button>
+        </ion-buttons>
+        <ion-title *ngIf="!isVedioPage">文章详情</ion-title>
+        <ion-buttons slot="end">
+            <ion-button>
+                <i class="icon-collection-s" [class.icon-collection-white]="isVedioPage" [class.icon-collection-on]="isCollection"></i>
+            </ion-button>
+            <ion-button>
+                <i class="icon-shareit" [class.icon-share-white]="isVedioPage"></i>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="{{isVedioPage}}" class="content">
+    <div class="video-box" *ngIf="isVedioPage">
+        <img src="../../assets/images/demo.jpg" alt="" width="100%" height="210">
+    </div>
+    <div class="cp-content">
+        <h1 class="d-title">秃顶为什么没有被自然选择淘汰？</h1>
+        <ion-row class="d-user">
+            <ion-col size="auto">
+                <ion-avatar class="avatar">
+                    <img src="../../assets/images/user.png" alt="">
+                </ion-avatar>
+            </ion-col>
+            <ion-col>
+                <p class="name">陈期权</p>
+                <div class="fl-box">
+                    <p class="tags">协和医院主治医师</p>
+                    <p class="date">2019-9-3</p>
+                </div>
+            </ion-col>
+        </ion-row>
+        <div *ngIf="!isVedioPage">
+            <div class="img-box">
+                <img src="../../assets/images/demo.jpg" alt="" width="100%" height="210">
+            </div>
+            <div class="content">
+                <p>
+                    头发越来越少，到底是谁的错？ 以前我们总会怪毛囊，以为是脱发了，但有时，头发一切正常也会被我们不小心「拔」掉。 今天丁香医生就跟大家讲讲，哪些行为在不知不觉中「拔」掉了头发。 编辫子
+                    用力拉一根绳子，绳子会断。头发也一样，长期生拉硬拽也会掉。 这种外力拉扯引起的脱发，就叫牵拉性脱发。
+                    在生活中，牵拉头发的最常见情况就是扎马尾辫、编细发辫。此外，卷发、梳头、盘头、用太紧的发夹，都可能引起牵拉性脱发。 如何避免牵拉性脱发？很简单，做好 3 点： 辫子能少扎就少扎，能不扎就不扎。
+                    使用护发素，减少毛发纠缠。 梳头要轻要慢，减少不必要的牵拉。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-box">
+        <h2>精彩评论(1)</h2>
+        <ion-row class="comment-list">
+            <ion-col size="auto">
+                <ion-avatar class="avatar">
+                    <img src="../../assets/images/user.png" alt="">
+                </ion-avatar>
+            </ion-col>
+            <ion-col>
+                <p class="name">陈期权</p>
+                <div class="fl-box">
+                    <p class="tags">协和医院主治医师</p>
+                    <p class="date">283 <i class="icon-like-it"></i></p>
+                </div>
+                <div class="c-content">这种外力拉扯引起的脱发，就叫牵拉性脱发。
+                    在生活中，牵拉头发的最常见情况就是扎马尾辫、编细发辫。此外，卷发、梳头、盘头、用太紧的发夹，都可能引起牵拉性脱发。
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="comment-list">
+            <ion-col size="auto">
+                <ion-avatar class="avatar">
+                    <img src="../../assets/images/user.png" alt="">
+                </ion-avatar>
+            </ion-col>
+            <ion-col>
+                <p class="name">陈期权</p>
+                <div class="fl-box">
+                    <p class="tags">协和医院主治医师</p>
+                    <p class="date">283 <i class="icon-like-it"></i></p>
+                </div>
+                <div class="c-content">这种外力拉扯引起的脱发，就叫牵拉性脱发。
+                    在生活中，牵拉头发的最常见情况就是扎马尾辫、编细发辫。此外，卷发、梳头、盘头、用太紧的发夹，都可能引起牵拉性脱发。
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-button expand="block" routerLink="/comments" class="all-comment-btn">全部精彩评论
+            <ion-icon name="arrow-forward"></ion-icon>
+        </ion-button>
+    </div>
+</ion-content>
+<ion-footer>
+    <ion-item lines="none">
+        <ion-input placeholder="写评论..." class="c-input"></ion-input>
+        <i class="icon-comment"></i>
+    </ion-item>
+</ion-footer>

@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar class="toolbar">
+        <ion-buttons slot="start">
+            <ion-back-button mode="md" class="back"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="app-content" fullscreen="true">
+    <div class="sign-btn-box">
+        <ion-button class="sign-btn"></ion-button>
+    </div>
+    <div class="my-coin">我的积分：<span>135</span>分</div>
+    <ion-card class="card">
+        <ion-card-header class="card-header">已连续签到<span>3</span>天</ion-card-header>
+        <ion-row>
+            <ion-col>
+                <div class="days active">
+                    <span class="coin">+3</span>
+                    <span class="day">第一天</span>
+                </div>
+            </ion-col>
+            <ion-col>
+                <div class="days active">
+                    <span class="coin">+3</span>
+                    <span class="day">第二天</span>
+                </div>
+            </ion-col>
+            <ion-col>
+                <div class="days active">
+                    <span class="coin">+3</span>
+                    <span class="day">第三天</span>
+                </div>
+            </ion-col>
+            <ion-col>
+                <div class="days">
+                    <span class="coin">+3</span>
+                    <span class="day">第四天</span>
+                </div>
+            </ion-col>
+            <ion-col>
+                <div class="days">
+                    <span class="coin">+3</span>
+                    <span class="day">第五天</span>
+                </div>
+            </ion-col>
+            <ion-col>
+                <div class="days">
+                    <span class="coin">+3</span>
+                    <span class="day">第六天</span>
+                </div>
+            </ion-col>
+            <ion-col>
+                <div class="days">
+                    <span class="coin">+3</span>
+                    <span class="day">第七天</span>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <div style="text-align: center; margin: 15px 0;">
+        <ion-label class="title">签到规则</ion-label>
+    </div>
+    <p class="desc">参与签到活动可获得随机数量(3-5)的积分奖励；如连续签到满7天，第7天还将额外获赠10积分。</p>
+    <div style="text-align: center; margin: 15px 0;">
+        <ion-label class="title">连续签到规则</ion-label>
+    </div>
+    <p class="desc">连续签到的日期不可中断，如日期中断，连续签到的天数会从1天开始重新计算；用户获得连续签到奖励后，连续签到天数会重新计算，并在下一次连续签到满7天时再次获得连签奖励。</p>
+    <p class="desc">例如：您从6月1日开始每日连续签到，您将在6月7日获得连续签到奖励；6月8日，您的连续签到天数从1天开始重新累计；6月14日，您可再获得连签7天的积分奖励。</p>
+</ion-content>

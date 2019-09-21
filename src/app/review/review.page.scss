@@ -1,0 +1,60 @@
+@import "../../assets/scss/mixin.scss";
+
+.toolbar {
+  --background: transparent;
+  --border-color: transparent;
+}
+
+.back {
+  --color: #fff;
+}
+
+.app-content {
+  --background: url('../../assets/images/review/bg-1@2x.png') repeat-y 0 0 / contain;
+}
+
+.review {
+  height: 100%;
+  width: 90%;
+  margin: 40px auto 10px auto;
+  background: url('../../assets/images/review/bg-2@2x.png') no-repeat 0 0 / contain;
+  padding: 20px;
+  @include font-color;
+  font-size: 16px;
+  .btn{
+    @include btn(100%, 50px);
+    --background:rgba(218,90,107,1);
+    --background-activated:rgba(218,90,107,1);
+    --box-shadow:0px 2px 15px 0px rgba(218,90,107,1);
+  }
+  .hide{
+    display: none;
+  }
+  h1{font-size: 16px!important; line-height: 25px;
+  span{
+    color:#EF7A82;
+  }}
+  .selected{display: block;}
+  .progress-bar{
+    --buffer-background:#EAEAEA;
+    --progress-background: #DA5A6B;
+    height: 10px;
+    border-radius: 5px;
+  }
+  .progress-num{
+    text-align: center; font-weight: 700; font-size: 20px; @include font-color;
+    span{ color: #B0ACB3;}
+  }
+  ion-icon{font-size: 24px; vertical-align: middle; margin-top: -4px;}
+  .thanks{
+    text-align: center;
+    margin: 20px 0;
+  }
+  .end-h{
+    color:#5B5060;font-size: 16px; text-align: center;
+  }
+  .end-t{ color:#B0ACB3; font-size: 14px; text-align: center; margin-bottom: 100px;}
+}
+ion-item{
+  --padding-start: 0;
+}

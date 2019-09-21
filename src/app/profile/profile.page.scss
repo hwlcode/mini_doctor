@@ -1,0 +1,122 @@
+@import "../../assets/scss/mixin.scss";
+
+ion-content {
+  //--background: #f6f6f6;
+}
+
+ion-toolbar {
+  --border-color: #fff;
+  --color: #5b5060;
+  text-align: center;
+}
+
+.top-icons {
+  color: #5b5060;
+  font-size: 20px;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-right: 10px;
+}
+
+.icon-msg {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/msg');
+}
+.icon-set {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/set');
+}
+.icon-coin {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/coin');
+}
+.icon-collection {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/collection');
+}
+.icon-fadeback {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/fadeback');
+}
+.icon-sign {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/sign');
+  width: 30px; height: 30px;
+}
+.icon-like {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/like');
+}
+.icon-share {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/share');
+}
+.icon-about {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/about');
+}
+.icon-more {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/more');
+  width: 8px;
+  margin-right: 0;
+}
+
+.my-space{ border-top: 8px #f6f6f6 solid; border-bottom: 8px #f6f6f6 solid;}
+
+.user-msg {
+  background: #fff;
+  padding: 10px 20px;
+}
+
+.fl-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 18px;
+  flex: 0 0 200px;
+  @include font-color;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.h-btn {
+  flex: 0 0 80px;
+  font-size: 14px;
+  @include btn(80px, 30px);
+}
+
+ion-list {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  @include font-color;
+  font-size: 15px;
+
+  ion-item {
+    margin-right: 15px;
+    border-bottom: 1px #f4f4f4 solid;
+    line-height: 35px;
+    color: #5b5060;
+  }
+}
+
+.code {
+  text-align: right;
+  margin-right: 0px;
+}
+
+.arrow-forward {
+  margin-right: -8px;
+  color: #b6b2b9;
+}
+

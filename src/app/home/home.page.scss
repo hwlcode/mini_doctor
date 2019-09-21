@@ -2,7 +2,10 @@
 
 ion-content {
   --background: #fefefe;
-  //@include bg-image('assets/images/banner.png');
+}
+
+ion-toolbar {
+  @include toolbar;
 }
 
 ion-card {
@@ -12,7 +15,7 @@ ion-card {
 }
 
 ion-button {
-  --background: linear-gradient(to right, #ee8a4d, #dc5b6c);
+  --background:linear-gradient(90deg,rgba(249,166,59,1) 0%,rgba(219,90,108,1) 100%);
 }
 
 .slide-box {
@@ -24,14 +27,14 @@ ion-button {
 }
 
 .title {
-  font-size: 14px;
-  color: #5b5060;
+  font-size: 15px;
+  @include font-color;
   margin-bottom: 5px;
 }
 
 .desc {
-  font-size: 12px;
-  color: #b1acb3;
+  font-size: 13px;
+  @include p-color;
   margin-top: 0;
 }
 
@@ -50,14 +53,17 @@ ion-button {
 
 .fl-box {
   display: flex;
-  background: #fff8ef;
+  background: #FFF3E3;
   border-radius: 3px;
+  &.bg2{
+    background:rgba(254,232,233,1);
+  }
 }
 
 .h-title {
   text-align: center;
   font-size: 20px;
-  color: #5b5060;
+  @include font-color;
   font-weight: 700;
   margin: 30px 0;
 }
@@ -65,11 +71,11 @@ ion-button {
 .h-desc {
   text-align: center;
   font-size: 14px;
-  color: #b0acb3;
+  @include p-color;
   margin: 30px 0;
 }
 
 .h-btn {
-  width: 70%;
   margin: 0 auto 30px auto;
+  @include btn(80%, 40px)
 }

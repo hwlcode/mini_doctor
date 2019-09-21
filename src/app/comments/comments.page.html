@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md"></ion-back-button>
+    </ion-buttons>
+    <ion-title>全部评论</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+<div class="no-data" *ngIf="!hasData"></div>
+<div *ngIf="hasData">
+  <div class="comment-box">
+    <h2>最新评论</h2>
+    <ion-row class="comment-list">
+      <ion-col size="auto">
+        <ion-avatar class="avatar">
+          <img src="../../assets/images/user.png" alt="">
+        </ion-avatar>
+      </ion-col>
+      <ion-col>
+        <p class="name">陈期权</p>
+        <div class="fl-box">
+          <p class="tags">协和医院主治医师</p>
+          <p class="date">283 <i class="icon-like-it"></i></p>
+        </div>
+        <div class="c-content">这种外力拉扯引起的脱发，就叫牵拉性脱发。
+          在生活中，牵拉头发的最常见情况就是扎马尾辫、编细发辫。此外，卷发、梳头、盘头、用太紧的发夹，都可能引起牵拉性脱发。
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="comment-list">
+      <ion-col size="auto">
+        <ion-avatar class="avatar">
+          <img src="../../assets/images/user.png" alt="">
+        </ion-avatar>
+      </ion-col>
+      <ion-col>
+        <p class="name">陈期权</p>
+        <div class="fl-box">
+          <p class="tags">协和医院主治医师</p>
+          <p class="date">283 <i class="icon-like-it"></i></p>
+        </div>
+        <div class="c-content">这种外力拉扯引起的脱发，就叫牵拉性脱发。
+          在生活中，牵拉头发的最常见情况就是扎马尾辫、编细发辫。此外，卷发、梳头、盘头、用太紧的发夹，都可能引起牵拉性脱发。
+        </div>
+      </ion-col>
+    </ion-row>
+<!--    <ion-button expand="block" routerLink="/comments" class="all-comment-btn">全部精彩评论-->
+<!--      <ion-icon name="arrow-forward"></ion-icon>-->
+<!--    </ion-button>-->
+  </div>
+</div>
+</ion-content>
+<ion-footer>
+  <ion-item lines="none">
+    <ion-input placeholder="写评论..." class="c-input"></ion-input>
+    <i class="icon-comment"></i>
+  </ion-item>
+</ion-footer>

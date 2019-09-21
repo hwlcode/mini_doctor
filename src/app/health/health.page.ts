@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-health',
-  templateUrl: './health.page.html',
-  styleUrls: ['./health.page.scss'],
+    selector: 'app-health',
+    templateUrl: './health.page.html',
+    styleUrls: ['./health.page.scss'],
 })
 export class HealthPage implements OnInit {
 
-  constructor() { }
+    constructor(private router: Router) {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    segmentChanged(e) {
+
+    }
+
+    goDetail(id) {
+        this.router.navigateByUrl('/detail', {queryParams: id});
+    }
 
 }

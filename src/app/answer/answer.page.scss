@@ -1,0 +1,72 @@
+@import "../../assets/scss/mixin.scss";
+
+.toolbar{
+  @include toolbar;
+}
+.video-page{
+  --background: transparent;
+}
+.content{
+  @include content-bg;
+}
+
+.list{
+  background: none;
+}
+.list-item{
+  padding: 15px 10px 5px 0;
+  @include font-color;
+  margin-bottom: 8px;
+  background: #fff;
+}
+.title{
+  font-size: 15px; line-height: 22px; padding: 0 10px;
+}
+.desc{
+  font-size: 13px; line-height: 13px; padding: 0 10px;
+  @include p-color;
+  margin-top: 20px;
+  display: block;
+  width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+
+}
+.avatar{
+  width: 15px; height: 15px; margin: 3px 0 0 11px;
+}
+.tags{
+  color:#B0ACB3; font-size: 12px; line-height: 15px;
+}
+.tags-btn{
+  --background:#fff;
+  --background-activated: #fff;
+  --border-color: #EF7A82;
+  --border-radius: 4px;
+  --border-style: solid;
+  --border-width: 1px;
+  --color:#EF7A82;
+  width: 40px;
+  height: 20px;
+  font-size: 10px;
+}
+
+.video{
+  padding-right: 0;
+  .video-box{
+    padding: 3px 10px;
+  }
+  .title{
+    padding-left: 0;
+  }
+  .desc{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 0;
+  }
+  .tags-btn{
+    margin-right: 10px;
+  }
+}

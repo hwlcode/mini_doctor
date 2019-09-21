@@ -1,8 +1,60 @@
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-right: 10px;
+}
+
 @mixin bg-image($url) {
-  background-image: url($url + '@2x.png');
+  background-image: url($url + '.png');
   @media (-webkit-min-device-pixel-ratio: 3) {
     @media (min-device-pixel-ratio: 3) {
-      background-image: url($url + '@3x.png');
+      background-image: url($url + '@2x.png');
     }
   }
+}
+
+@mixin font-color {
+  color: #5B5060
+}
+
+@mixin p-color {
+  color: #B0ACB3;
+}
+
+@mixin btn($w, $h) {
+  --background: #dc5d6b linear-gradient(to right, #ee8a4d, #dc5b6c);
+  --border-radius: 4px;
+  width: $w;
+  height: $h;
+  --background-activated: #dc5d6b linear-gradient(to right, #ee8a4d, #dc5b6c);
+}
+
+@mixin content-bg {
+  --background: rgba(246, 246, 246, 1);
+}
+
+@mixin toolbar {
+  --border-color: #fff;
+  @include font-color;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+@mixin icon-more {
+  @extend .icon;
+  @include bg-image('../../assets/images/profile/more');
+  width: 8px;
+  margin-right: 0;
+}
+
+@mixin list-item {
+    --padding-bottom: 10px;
+    --padding-top: 10px;
+    @include font-color;
+    margin: 0 10px;
+    border-bottom: 1px #f4f4f4 solid;
 }

@@ -1,0 +1,107 @@
+@import "../../assets/scss/mixin.scss";
+
+ion-toolbar {
+  --background: transparent;
+  --border-color: transparent;
+}
+
+.back {
+  --color: #fff;
+}
+
+.app-content {
+  --background: url('../../assets/images/profile/signin.png') no-repeat 0 0 / contain;
+}
+
+.sign-btn-box {
+  width: 105px;
+  height: 105px;
+  margin: 20px auto;
+}
+
+.sign-btn {
+  width: 105px;
+  height: 105px;
+  --background: transparent;
+  --background-activated: transparent;
+}
+
+.my-coin {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+
+  span {
+    color: #FED32B;
+  }
+}
+
+.card {
+  background: #fff;
+}
+
+.card-header {
+  font-size: 15px;
+  padding: 10px;
+
+  span {
+    color: #DB5B6B;
+  }
+}
+
+.days {
+  background: rgba(238, 238, 238, 1);
+  border-radius: 4px;
+  height: 50px;
+  font-size: 10px;
+  text-align: center;
+
+  span {
+    display: inline-block;
+
+    &.coin {
+      background: rgba(215, 213, 216, 1);
+      border-radius: 20px;
+      height: 20px;
+      color: #7B717C;
+      line-height: 20px;
+      width: 20px;
+      margin: 5px 0;
+    }
+
+    &.day {
+      display: block;
+      color: #AEABB2;
+    }
+  }
+
+  &.active {
+    background: #EE7B83;
+
+    span {
+      color: #fff;
+
+      &.coin {
+        background: rgba(217, 92, 112, 1);
+      }
+    }
+  }
+}
+.title{
+  color:#7A707B; font-size: 15px; display: inline-block; position: relative;
+  &:before{
+    content: "";
+    position: absolute; width: 38px; height: 6px;
+    border-bottom: 1px #EEEEEE solid;
+    left: -45px; top: 4px;
+  }
+  &:after{
+    content: "";
+    position: absolute; width: 38px; height: 6px;
+    border-bottom: 1px #EEEEEE solid;
+    right: -45px; top: 4px;
+  }
+}
+.desc{
+  color:#AEABB2; font-size: 13px; line-height: 21px; padding: 0 15px; margin-bottom: 5px; margin-top: 0;
+}

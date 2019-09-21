@@ -1,9 +1,56 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>我的</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="primary">
+            <ion-button routerLink="/setting" class="top-icons">
+                <i class="icon-set"></i>
+            </ion-button>
+            <ion-button routerLink="/message" class="top-icons">
+                <i class="icon-msg"></i>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <div class="user-msg">
+        <div class="fl-box">
+            <ion-avatar>
+                <img src="assets/images/user.png" alt="" width="60">
+            </ion-avatar>
+            <span class="name">代码码得很帅的小伙子</span>
+            <ion-button expand="block" routerLink="/signin" class="h-btn"><i class="icon-sign"></i> 签到</ion-button>
+        </div>
+    </div>
+    <ion-list lines="none" class="my-space">
+        <ion-item>
+            <i class="icon-coin"></i>
+            <ion-label>我的积分</ion-label>
+            <ion-label class="code">355</ion-label>
+        </ion-item>
+        <ion-item routerLink="/collection" button="true">
+            <i class="icon-collection"></i>
+            <ion-label>我的收藏</ion-label>
+        </ion-item>
+        <ion-item>
+            <i class="icon-fadeback"></i>
+            <ion-label>用户反馈</ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-list lines="none">
+        <ion-item>
+            <i class="icon-like"></i>
+            <ion-label>去好评</ion-label>
+            <i class="icon-more"></i>
+        </ion-item>
+        <ion-item>
+            <i class="icon-share"></i>
+            <ion-label>推荐给好友</ion-label>
+            <i class="icon-more"></i>
+        </ion-item>
+        <ion-item>
+            <i class="icon-about"></i>
+            <ion-label>关于我们</ion-label>
+            <i class="icon-more"></i>
+        </ion-item>
+    </ion-list>
 </ion-content>

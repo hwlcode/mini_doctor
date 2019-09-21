@@ -4,11 +4,11 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="content">
     <div class="slide-box">
         <ion-slides pager="true" autoplay="3000" loop="true" zoom="true">
             <ion-slide *ngFor="let slide of slides">
-                <img src="{{slide}}" alt="">
+                <img src="{{slide}}" alt="" (click)="openUrl()">
             </ion-slide>
         </ion-slides>
     </div>
@@ -16,7 +16,7 @@
     <ion-grid>
         <ion-row>
             <ion-col size="6">
-                <div class="fl-box">
+                <div class="fl-box" (click)="goAnswer()">
                     <div class="icon"></div>
                     <div class="fl-right">
                         <p class="title">名医解答</p>
@@ -25,7 +25,7 @@
                 </div>
             </ion-col>
             <ion-col>
-                <div class="fl-box bg2">
+                <div class="fl-box bg2" (click)="goUserMessage()">
                     <div class="icon icon-1"></div>
                     <div class="fl-right">
                         <p class="title">个人信息补全</p>
@@ -40,7 +40,7 @@
         <ion-card-content>
             <p class="h-title">全国适龄生育女性调查</p>
             <p class="h-desc">以下测评结果不会公开，我们会对结果保密。</p>
-            <ion-button expand="block" class="h-btn">开始评测</ion-button>
+            <ion-button expand="block" routerLink="/review" class="h-btn">开始评测</ion-button>
         </ion-card-content>
     </ion-card>
 </ion-content>
