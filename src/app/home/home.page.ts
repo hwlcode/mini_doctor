@@ -15,7 +15,8 @@ export class HomePage implements OnInit {
     ];
     slideOpts = {
         initialSlide: 1,
-        speed: 400
+        speed: 400,
+        autoplay: true
     };
 
     constructor(private router: Router,
@@ -34,7 +35,7 @@ export class HomePage implements OnInit {
     }
 
     openUrl() {
-        const browser = this.iab.create('https://baidu.com/', '_blank', 'location=yes');
+        const browser = this.iab.create('https://baidu.com/', '_blank', 'closebuttoncaption=返回');
         browser.show();
     }
 

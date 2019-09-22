@@ -60,8 +60,15 @@
     --background-activated: none;
     color:#DB596B; font-size: 13px;
   }
-  .c-input{
-    --background:rgba(247,247,247,1);
-    border-radius:2px;
-  }
+}
+ion-footer{
+  background:rgba(255,255,255,1);
+  box-shadow:0px -4px 20px 0px rgba(0,0,0,0.06);
+  padding-bottom: 20px;
+}
+.c-input{
+  margin-top: 10px;
+  margin-right: 10px;
+  --background:rgba(247,247,247,1);
+  border-radius:2px;
 }

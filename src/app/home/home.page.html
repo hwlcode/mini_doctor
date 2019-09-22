@@ -6,7 +6,7 @@
 
 <ion-content class="content">
     <div class="slide-box">
-        <ion-slides pager="true" autoplay="3000" loop="true" zoom="true">
+        <ion-slides pager="false" mode="md" [options]="slideOpts">
             <ion-slide *ngFor="let slide of slides">
                 <img src="{{slide}}" alt="" (click)="openUrl()">
             </ion-slide>

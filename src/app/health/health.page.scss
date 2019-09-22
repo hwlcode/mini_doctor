@@ -10,18 +10,18 @@ ion-content {
   --padding-end: 0;
   --padding-start: 0;
   --padding-top: 0;
-  height: 44px;
-  line-height: 44px;
 }
 
 .tabs {
-  display: block;
+  display: flex;
   text-align: left;
   padding-left: 10px;
+  justify-content: flex-start;
 }
 
 .tab-items {
-  display: inline-block;
+  flex: 0 0 auto;
+  //display: inline-block;
   margin-right: 20px;
   --color: #7A707B;
   --color-checked: #DB5A6C;
@@ -47,6 +47,11 @@ ion-content {
 }
 .title{
   font-size: 15px; line-height: 22px; padding: 0 10px 0 10px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
 }
 .desc{
   font-size: 13px; line-height: 13px; padding: 0 10px 0 10px;

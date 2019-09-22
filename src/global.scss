@@ -24,8 +24,8 @@
 
 /* model 样式必须在全局样式中定义才生效*/
 .bichao-page {
-  --height: 400px;
-  --max-height: 400px;
+  --height: 500px;
+  --max-height: 500px;
   --border-radius: 15px 15px 0 0;
   bottom: -412px;
 }
@@ -37,7 +37,8 @@
   --border-color: #F2F2F2;
   color: #5B5060;
   text-align: center;
-  margin: 0 20px;
+  height: 44px;
+  line-height: 44px;
 }
 .model-content{
   font-size: 14px; line-height: 22px; color:#78727D;

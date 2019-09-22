@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ModalController} from '@ionic/angular';
+import {ModalController, NavController} from '@ionic/angular';
 import {Storage} from '@ionic/storage';
-import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-login',
@@ -11,8 +10,8 @@ import {Router} from '@angular/router';
 export class LoginPage implements OnInit {
 
     constructor(private modalCtrl: ModalController,
-                private storage: Storage,
-                private router: Router) {
+                private navCtrl: NavController,
+                private storage: Storage) {
     }
 
     ngOnInit() {
@@ -29,7 +28,7 @@ export class LoginPage implements OnInit {
         this.modalCtrl.dismiss({
             dismissed: true
         });
-        this.router.navigateByUrl('/profile');
+        this.navCtrl.navigateRoot(['/tabs/profile']);
     }
 
 }
