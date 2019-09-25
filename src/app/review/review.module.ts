@@ -6,7 +6,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { ReviewPage } from './review.page';
-import {ReviewPageOnePage} from '../review-page-one/review-page-one.page';
 
 const routes: Routes = [
   {
@@ -22,7 +21,7 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  entryComponents: [ReviewPageOnePage],  // 这两个地方都需要引入
-  declarations: [ReviewPage, ReviewPageOnePage] // 这两个地方都需要引入
+  entryComponents: [],
+  declarations: [ReviewPage]
 })
 export class ReviewPageModule {}
