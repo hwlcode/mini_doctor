@@ -27,6 +27,6 @@ npm-debug.log*
 /dist
 /platforms
 /plugins
-/www
 /node_modules
+/www
 
